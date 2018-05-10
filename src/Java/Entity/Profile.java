@@ -11,6 +11,9 @@ public class Profile {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name = "client_no", nullable = true)
+    private String profileNo;
+
     @Column(name = "name", unique = true)
     private String name;
 
@@ -19,6 +22,14 @@ public class Profile {
 
     public Profile(String name) {
         this.name = name;
+    }
+
+    public String getProfileNo() {
+        return profileNo;
+    }
+
+    public void setProfileNo(String profileNo) {
+        this.profileNo = profileNo;
     }
 
     public Long getId() {
