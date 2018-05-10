@@ -24,6 +24,10 @@ public class Profile {
         this.name = name;
     }
 
+    public Profile() {
+
+    }
+
     public String getProfileNo() {
         return profileNo;
     }

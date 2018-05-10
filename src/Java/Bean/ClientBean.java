@@ -1,6 +1,6 @@
 package Bean;
 
-import Dao.ClientDao;
+import Dao.Client.ClientDao;
 import Entity.Client;
 
 import javax.ejb.Local;

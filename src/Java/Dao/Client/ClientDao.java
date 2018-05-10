@@ -1,5 +1,6 @@
-package Dao;
+package Dao.Client;
 
+import Dao.CustomDao;
 import Entity.Client;
 
 import javax.persistence.EntityManager;

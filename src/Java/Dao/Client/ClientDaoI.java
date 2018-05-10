@@ -1,4 +1,4 @@
-package Dao;
+package Dao.Client;
 
 import Entity.Client;
 

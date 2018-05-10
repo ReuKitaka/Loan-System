@@ -5,12 +5,12 @@ import javax.persistence.PersistenceException;
 
 public class CustomDao<T> {
 
-    EntityManager entityManager;
+    protected EntityManager entityManager;
 
     public CustomDao(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
-    boolean addCustom(T t){
+    public boolean addCustom(T t){
         try{
             entityManager.persist(t);
             return true;
