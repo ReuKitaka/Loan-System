@@ -1,5 +1,8 @@
 package Controlers.Client;
+import Bean.BankBeanI;
+import Bean.BranchBeanI;
 import Bean.ClientBeanI;
+import Dao.Branch.BranchDaoI;
 import Entity.Bank;
 import Entity.Branch;
 import Entity.Enums.Title;
@@ -31,7 +34,11 @@ public class AddClientServlet extends CustomServlet {
     @EJB
     ClientBeanI clientBeanI;
 
+    @EJB
+    BankBeanI bankBeanI;
 
+    @EJB
+    BranchBeanI branchBeanI;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -54,8 +61,17 @@ public class AddClientServlet extends CustomServlet {
         client.setDateCreated(new Date());
         client.setPreparedBy(new User());
         client.setEmployed(YesNo.fromString(get(req,"")));
-        client.setBank(new Bank());
-        client.setBankBranch(new Branch());
+
+
+        Bank bank=new Bank();
+        bank.setName(get(req,""));
+        Bank b= (Bank) bankBeanI.viewByName(bank);
+        client.setBank(b);
+
+        Branch branch=new Branch();
+        branch.setName(get(req,""));
+        Branch branch1= (Branch) branchBeanI.viewByName(branch);
+        client.setBankBranch(branch1);
         client.setBankAccount("");
         client.setUpdated(YesNo.fromString("No"));
         client.setTitle(Title.fromString(""));

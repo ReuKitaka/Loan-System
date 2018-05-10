@@ -35,5 +35,59 @@ public class Bank implements Serializable{
     @ManyToOne
     private Regime regime;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getSwiftCode() {
+        return swiftCode;
+    }
+
+    public void setSwiftCode(String swiftCode) {
+        this.swiftCode = swiftCode;
+    }
+
+    public PayPointType getPayPointType() {
+        return payPointType;
+    }
+
+    public void setPayPointType(PayPointType payPointType) {
+        this.payPointType = payPointType;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public Regime getRegime() {
+        return regime;
+    }
+
+    public void setRegime(Regime regime) {
+        this.regime = regime;
+    }
 }
