@@ -87,6 +87,9 @@ public class Client extends Person implements Serializable {
     @OneToOne
     private Branch bankBranch;
 
+    @OneToOne
+    private Account account;
+
     @Column(name = "bank_account")
     private String bankAccount;
 
@@ -98,7 +101,13 @@ public class Client extends Person implements Serializable {
     private Date dateUpdated;
 
 
+    public Account getAccount() {
+        return account;
+    }
 
+    public void setAccount(Account account) {
+        this.account = account;
+    }
 
     @Override
     public Long getId() {
