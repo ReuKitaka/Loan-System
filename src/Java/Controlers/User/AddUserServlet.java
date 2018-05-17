@@ -61,6 +61,5 @@ public class AddUserServlet extends CustomServlet {
 
 
 
-        super.doPost(req, resp);
     }
 }

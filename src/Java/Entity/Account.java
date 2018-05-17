@@ -1,11 +1,20 @@
 package Entity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "SelectAll",
+                query = "select c from Account c "
+        ),
+        @NamedQuery(
+                name = "SelectById",
+                query = "select c from Account c where c.accountNo=:id"
+        )
+})
+
+@Entity
 public class Account implements Serializable{
 
     @Id
