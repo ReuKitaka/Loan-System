@@ -1,10 +1,11 @@
 package Entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 
 @Entity
-public class Agent extends Person {
+public class Agent extends Person implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

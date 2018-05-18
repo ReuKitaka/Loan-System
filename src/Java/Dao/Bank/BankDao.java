@@ -30,18 +30,42 @@ public class BankDao extends CustomDao<Bank> implements BankDaoI{
     }
 
     public Bank viewByIdObj(Bank bank) {
-        return null;
+        try {
+            List<Bank>brankList=entityManager.createNamedQuery("SelectById")
+                    .setParameter("id",bank.getCode()).getResultList();
+            return brankList.size()>0?brankList.get(0):null;
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public List<Bank> viewById(Bank bank) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectById")
+                    .setParameter("id",bank.getCode()).getResultList();
+        }catch (Exception e){
+            return null;
+        }
     }
 
     public List<Bank> viewAll(Bank bank) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectAll").getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public List<Bank> viewByName(Bank bank) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectByName")
+                    .setParameter("bname",bank.getName()).getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+
     }
 }

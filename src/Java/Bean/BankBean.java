@@ -30,18 +30,19 @@ public class BankBean implements BankBeanI {
     }
 
     public Bank viewByIdObj(Bank bank) {
+
         return null;
     }
 
     public List<Bank> viewById(Bank bank) {
-        return null;
+        return bankDao.viewById(bank);
     }
 
     public List<Bank> viewAll(Bank bank) {
-        return null;
+        return bankDao.viewAll(bank);
     }
 
     public List<Bank> viewByName(Bank bank) {
-        return null;
+        return bankDao.viewByName(bank);
     }
 }

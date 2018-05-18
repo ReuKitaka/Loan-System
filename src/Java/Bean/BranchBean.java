@@ -35,18 +35,18 @@ public class BranchBean implements BranchBeanI{
     }
 
     public Branch viewByIdObj(Branch branch) {
-        return null;
+        return branchDao.viewByIdObj(branch);
     }
 
     public List<Branch> viewById(Branch branch) {
-        return null;
+        return branchDao.viewById(branch);
     }
 
     public List<Branch> viewAll(Branch branch) {
-        return null;
+        return branchDao.viewAll(branch);
     }
 
     public List<Branch> viewByName(Branch branch) {
-        return null;
+        return branchDao.viewByName(branch);
     }
 }

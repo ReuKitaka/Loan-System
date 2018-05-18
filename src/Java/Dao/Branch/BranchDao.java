@@ -30,18 +30,41 @@ public class BranchDao extends CustomDao<Branch> implements BranchDaoI{
     }
 
     public Branch viewByIdObj(Branch branch) {
-        return null;
+        try {
+            List<Branch>branchList=entityManager.createNamedQuery("SelectById")
+                    .setParameter("id",branch.getCode()).getResultList();
+            return branchList.size()>0?branchList.get(0):null;
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public List<Branch> viewById(Branch branch) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectById")
+                    .setParameter("id",branch.getCode()).getResultList();
+        }catch (Exception e){
+            return null;
+        }
     }
 
     public List<Branch> viewAll(Branch branch) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectAll").getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public List<Branch> viewByName(Branch branch) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectByName")
+                    .setParameter("bname",branch.getName()).getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -39,6 +39,11 @@ public class UserDao extends CustomDao<User> implements UserBeanI{
     }
 
     public List<User> viewAll(User user) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectAll").getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

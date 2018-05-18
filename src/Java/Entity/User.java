@@ -7,6 +7,16 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "SelectAll",
+                query = "select u from User u "
+        ),
+        @NamedQuery(
+                name = "SelectById",
+                query = "select u from User u where u.code=:id"
+        )
+})
 @Entity
 @Table(name = "users")
 public class User implements Serializable {

@@ -10,7 +10,7 @@ import java.io.Serializable;
         ),
         @NamedQuery(
                 name = "SelectById",
-                query = "select c from Account c where c.accountNo=:id"
+                query = "select c from Account c where c.accountNo=:no"
         )
 })
 

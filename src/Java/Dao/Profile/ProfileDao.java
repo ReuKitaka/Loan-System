@@ -38,6 +38,11 @@ public class ProfileDao extends CustomDao<Profile> implements ProfileDaoI{
     }
 
     public List<Profile> viewAll(Profile profile) {
-        return null;
+        try {
+            return entityManager.createNamedQuery("SelectAll").getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 }

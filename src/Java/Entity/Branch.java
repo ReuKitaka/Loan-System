@@ -3,8 +3,20 @@ package Entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
-
+@NamedQueries({
+        @NamedQuery(
+                name = "SelectAll",
+                query = "select b from Branch b "
+        ),
+        @NamedQuery(
+                name = "SelectById",
+                query = "select b from Branch b where b.code=:id"
+        ),
+        @NamedQuery(
+                name = "SelectByName",
+                query = "select b from Branch b where  b.name like lower(:bname) "
+        )
+})
 @Entity
 @Table(name = "bank_branches")
 public class Branch implements Serializable {

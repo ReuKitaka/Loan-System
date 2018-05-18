@@ -6,6 +6,21 @@ import Entity.Enums.Status;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
+@NamedQueries({
+        @NamedQuery(
+                name = "SelectAll",
+                query = "select b from Bank b "
+        ),
+        @NamedQuery(
+                name = "SelectById",
+                query = "select b from Bank b where b.code=:id"
+        ),
+        @NamedQuery(
+                name = "SelectByName",
+                query = "select b from Bank b where  b.name like lower(:bname) "
+        )
+})
 @Entity
 @Table(name = "banks")
 public class Bank implements Serializable{
