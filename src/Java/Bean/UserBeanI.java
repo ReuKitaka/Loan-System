@@ -19,4 +19,6 @@ public interface UserBeanI {
     List<User> viewById(User user);
 
     List<User> viewAll(User user);
+
+    List<User> viewByUname(User user);
 }

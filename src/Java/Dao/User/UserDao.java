@@ -7,7 +7,7 @@ import Entity.User;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class UserDao extends CustomDao<User> implements UserBeanI{
+public class UserDao extends CustomDao<User> implements UserDaoI{
     public UserDao(EntityManager entityManager) {
         super(entityManager);
     }
@@ -41,6 +41,16 @@ public class UserDao extends CustomDao<User> implements UserBeanI{
     public List<User> viewAll(User user) {
         try {
             return entityManager.createNamedQuery("SelectAll").getResultList();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public List<User> viewByUname(User user) {
+        try {
+            return entityManager.createNamedQuery("SelectByName")
+                    .setParameter("uName",user.getUsername()).getResultList();
         }catch (Exception e){
             e.printStackTrace();
             return null;

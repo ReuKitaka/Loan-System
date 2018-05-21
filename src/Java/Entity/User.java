@@ -12,9 +12,13 @@ import java.util.Date;
                 name = "SelectAll",
                 query = "select u from User u "
         ),
+//        @NamedQuery(
+//                name = "SelectById",
+//                query = "select u from User u where u.username=:uName"
+//        ),
         @NamedQuery(
-                name = "SelectById",
-                query = "select u from User u where u.code=:id"
+                name = "SelectByName",
+                query = "select u from User u where u.username like lower (:uName)"
         )
 })
 @Entity
