@@ -2,7 +2,6 @@ package Entity;
 
 import Entity.Enums.Status;
 import Entity.Enums.YesNo;
-import Entity.Person;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -17,7 +16,7 @@ import java.util.Date;
                 query = "select c from Client c "
         ),
         @NamedQuery(
-                name = "SelectById",
+                name = "SelectClientById",
                 query = "select c from Client c where c.clientNo=:id"
         )
 })
@@ -33,11 +32,14 @@ public class Client extends Person implements Serializable {
     @Column(name = "client_no", nullable = true)
     private String clientNo;
 
+    @Column(name = "id_no", nullable = true)
+    private String idNo;
+
     @OneToOne(cascade = CascadeType.ALL)
-    private Photo memberPhoto;
+    private Photo clientPhoto;
 
     @Embedded
-    private Entity.Address address;
+    private Address address;
 
     @Column(name = "facebook")
     private  String facebook;
@@ -127,12 +129,22 @@ public class Client extends Person implements Serializable {
         this.clientNo = clientNo;
     }
 
-    public Photo getMemberPhoto() {
-        return memberPhoto;
+    @Override
+    public String getIdNo() {
+        return idNo;
     }
 
-    public void setMemberPhoto(Photo memberPhoto) {
-        this.memberPhoto = memberPhoto;
+    @Override
+    public void setIdNo(String idNo) {
+        this.idNo = idNo;
+    }
+
+    public Photo getClientPhoto() {
+        return clientPhoto;
+    }
+
+    public void setClientPhoto(Photo clientPhoto) {
+        this.clientPhoto = clientPhoto;
     }
 
     public Address getAddress() {

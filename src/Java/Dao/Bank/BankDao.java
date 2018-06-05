@@ -31,7 +31,7 @@ public class BankDao extends CustomDao<Bank> implements BankDaoI{
 
     public Bank viewByIdObj(Bank bank) {
         try {
-            List<Bank>brankList=entityManager.createNamedQuery("SelectById")
+            List<Bank>brankList=entityManager.createNamedQuery("SelectBankById")
                     .setParameter("id",bank.getCode()).getResultList();
             return brankList.size()>0?brankList.get(0):null;
         }catch (Exception e){
@@ -42,7 +42,7 @@ public class BankDao extends CustomDao<Bank> implements BankDaoI{
 
     public List<Bank> viewById(Bank bank) {
         try {
-            return entityManager.createNamedQuery("SelectById")
+            return entityManager.createNamedQuery("SelectBankById")
                     .setParameter("id",bank.getCode()).getResultList();
         }catch (Exception e){
             return null;
@@ -51,7 +51,7 @@ public class BankDao extends CustomDao<Bank> implements BankDaoI{
 
     public List<Bank> viewAll(Bank bank) {
         try {
-            return entityManager.createNamedQuery("SelectAll").getResultList();
+            return entityManager.createNamedQuery("SelectAllBanks").getResultList();
         }catch (Exception e){
             e.printStackTrace();
             return null;
@@ -60,7 +60,7 @@ public class BankDao extends CustomDao<Bank> implements BankDaoI{
 
     public List<Bank> viewByName(Bank bank) {
         try {
-            return entityManager.createNamedQuery("SelectByName")
+            return entityManager.createNamedQuery("SelectBankByName")
                     .setParameter("bname",bank.getName()).getResultList();
         }catch (Exception e){
             e.printStackTrace();

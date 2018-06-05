@@ -2,6 +2,7 @@ package Dao.Branch;
 
 import Entity.Branch;
 
+import javax.ejb.Local;
 import java.util.List;
 
 public interface BranchDaoI {

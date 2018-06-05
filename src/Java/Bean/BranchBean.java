@@ -6,14 +6,17 @@ import Entity.Branch;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Local
 @Stateless
 public class BranchBean implements BranchBeanI{
 
-    @Inject
-    BranchDao branchDao;
+//    @Inject
+//    BranchDao branchDao;
+    EntityManager em;
+    BranchDao branchDao=new BranchDao(em);
 
 
     public boolean add(Branch branch) {

@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 
 @Entity
+@Table(name = "agents")
 public class Agent extends Person implements Serializable{
 
     @Id

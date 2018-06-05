@@ -5,16 +5,17 @@ import java.io.Serializable;
 
 @NamedQueries({
         @NamedQuery(
-                name = "SelectAll",
+                name = "SelectAllAccounts",
                 query = "select c from Account c "
         ),
         @NamedQuery(
-                name = "SelectById",
+                name = "SelectAccountById",
                 query = "select c from Account c where c.accountNo=:no"
         )
 })
 
 @Entity
+@Table(name = "accounts")
 public class Account implements Serializable{
 
     @Id

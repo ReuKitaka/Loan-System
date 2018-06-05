@@ -5,15 +5,15 @@ import java.io.Serializable;
 
 @NamedQueries({
         @NamedQuery(
-                name = "SelectAll",
+                name = "SelectAllBranches",
                 query = "select b from Branch b "
         ),
         @NamedQuery(
-                name = "SelectById",
+                name = "SelectBranchById",
                 query = "select b from Branch b where b.code=:id"
         ),
         @NamedQuery(
-                name = "SelectByName",
+                name = "SelectBranchByName",
                 query = "select b from Branch b where  b.name like lower(:bname) "
         )
 })

@@ -9,7 +9,7 @@ import java.util.Date;
 
 @NamedQueries({
         @NamedQuery(
-                name = "SelectAll",
+                name = "SelectAllUsers",
                 query = "select u from User u "
         ),
 //        @NamedQuery(
@@ -17,7 +17,7 @@ import java.util.Date;
 //                query = "select u from User u where u.username=:uName"
 //        ),
         @NamedQuery(
-                name = "SelectByName",
+                name = "SelectUserByName",
                 query = "select u from User u where u.username like lower (:uName)"
         )
 })

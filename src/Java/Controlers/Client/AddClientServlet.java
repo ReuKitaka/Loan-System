@@ -2,7 +2,6 @@ package Controlers.Client;
 import Bean.BankBeanI;
 import Bean.BranchBeanI;
 import Bean.ClientBeanI;
-import Dao.Branch.BranchDaoI;
 import Entity.Bank;
 import Entity.Branch;
 import Entity.Enums.Title;
@@ -23,11 +22,14 @@ import Entity.Client;
 import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+
+@WebServlet("/addClient")
 public class AddClientServlet extends CustomServlet {
 
 
@@ -50,7 +52,7 @@ public class AddClientServlet extends CustomServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Client client=new Client();
         client.setClientNo(get(req,""));
-        client.setMemberPhoto(new Photo());
+        client.setClientPhoto(new Photo());
         client.setAddress(new Address());
         client.setFacebook(get(req,""));
         client.setTwitter(get(req,""));

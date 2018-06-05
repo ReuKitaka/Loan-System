@@ -9,15 +9,15 @@ import java.io.Serializable;
 
 @NamedQueries({
         @NamedQuery(
-                name = "SelectAll",
+                name = "SelectAllBanks",
                 query = "select b from Bank b "
         ),
         @NamedQuery(
-                name = "SelectById",
+                name = "SelectBankById",
                 query = "select b from Bank b where b.code=:id"
         ),
         @NamedQuery(
-                name = "SelectByName",
+                name = "SelectBankByName",
                 query = "select b from Bank b where  b.name like lower(:bname) "
         )
 })

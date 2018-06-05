@@ -7,14 +7,18 @@ import Entity.Profile;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Local
 @Stateless
 public class ProfileBean implements ProfileBeanI{
 
-    @Inject
-    ProfileDaoI profileDao;
+    EntityManager em;
+//    @Inject
+//    ProfileDaoI profileDao;
+
+    ProfileDao profileDao=new ProfileDao(em);
     public boolean add(Profile profile) {
         if (profileDao.add(profile))
             return profileDao.add(profile);

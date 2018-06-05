@@ -14,7 +14,7 @@ public class Regime implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
+    //@ManyToOne
     @JoinColumn(name="region_id")
     private String region;
 

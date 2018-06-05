@@ -40,7 +40,7 @@ public class UserDao extends CustomDao<User> implements UserDaoI{
 
     public List<User> viewAll(User user) {
         try {
-            return entityManager.createNamedQuery("SelectAll").getResultList();
+            return entityManager.createNamedQuery("SelectAllUsers").getResultList();
         }catch (Exception e){
             e.printStackTrace();
             return null;
@@ -49,7 +49,7 @@ public class UserDao extends CustomDao<User> implements UserDaoI{
 
     public List<User> viewByUname(User user) {
         try {
-            return entityManager.createNamedQuery("SelectByName")
+            return entityManager.createNamedQuery("SelectUserByName")
                     .setParameter("uName",user.getUsername()).getResultList();
         }catch (Exception e){
             e.printStackTrace();

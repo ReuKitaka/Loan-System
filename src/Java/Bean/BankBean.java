@@ -3,9 +3,11 @@ package Bean;
 import Dao.Bank.BankDao;
 import Entity.Bank;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import java.util.List;
 
+@Stateless
 public class BankBean implements BankBeanI {
 
     EntityManager em;

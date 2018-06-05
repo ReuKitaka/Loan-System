@@ -4,22 +4,23 @@ import Entity.Enums.LoanSecurity;
 import Entity.Enums.YesNo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@NamedQueries({
+@NamedQueries(value = {
         @NamedQuery(
-                name = "SelectAll",
+                name = "SelectAllLoans",
                 query = "select l from Loan l "
         ),
         @NamedQuery(
-                name = "SelectById",
+                name = "SelectLoanById",
                 query = "select l from Loan l where l.loanNo=:no"
         )
 })
 @Entity
 @Table(name = "loans")
-public class Loan {
+public class Loan implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -38,8 +39,8 @@ public class Loan {
     @Enumerated(EnumType.STRING)
     LoanSecurity securityType;
 
-    @Column(name = "interest")
-    BigDecimal interest;
+    @Column(name = "percentage_interest")
+    BigDecimal percInterest;
 
     @Column(name ="loan_amount")
     BigDecimal amount;
@@ -107,11 +108,11 @@ public class Loan {
     }
 
     public BigDecimal getInterest() {
-        return interest;
+        return percInterest;
     }
 
     public void setInterest(BigDecimal interest) {
-        this.interest = interest;
+        this.percInterest = interest;
     }
 
     public BigDecimal getAmount() {

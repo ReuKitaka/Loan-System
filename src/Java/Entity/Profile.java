@@ -3,6 +3,20 @@ package Entity;
 
 import javax.persistence.*;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "SelectAllProfiles",
+                query = "select p from Profile p "
+        )
+//        @NamedQuery(
+//                name = "SelectById",
+//                query = "select p from Profile p where p.code=:id"
+//        ),
+//        @NamedQuery(
+//                name = "SelectByName",
+//                query = "select p from Profile p where  b.name like lower(:bname) "
+//        )
+})
 @Entity
 @Table(name = "profiles")
 public class Profile {

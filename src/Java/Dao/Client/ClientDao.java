@@ -30,7 +30,7 @@ public class ClientDao extends CustomDao<Client> implements ClientDaoI{
 
     public Client viewByIdObj(Client client) {
         try {
-            List<Client>clientList=entityManager.createNamedQuery("SelectById")
+            List<Client>clientList=entityManager.createNamedQuery("SelectClientById")
                     .setParameter("id",client.getClientNo()).getResultList();
             return clientList.size()>0?clientList.get(0):null;
         }catch (Exception e){
@@ -42,7 +42,7 @@ public class ClientDao extends CustomDao<Client> implements ClientDaoI{
 
     public List<Client> viewById(Client client) {
         try {
-            return entityManager.createNamedQuery("SelectById")
+            return entityManager.createNamedQuery("SelectClientById")
                     .setParameter("id",client.getClientNo()).getResultList();
         }catch (Exception e){
             e.printStackTrace();

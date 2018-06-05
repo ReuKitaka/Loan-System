@@ -7,14 +7,19 @@ import Entity.User;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Local
 @Stateless
 public class UserBean implements UserBeanI {
 
-    @Inject
-    UserDaoI userDaoI;
+
+    EntityManager em;
+//    @Inject
+//    UserDaoI userDaoI;
+
+    UserDao userDaoI=new UserDao(em);
     public boolean add(User user) {
         if (userDaoI.add(user))
             return userDaoI.add(user);
@@ -42,6 +47,10 @@ public class UserBean implements UserBeanI {
     }
 
     public List<User> viewAll(User user) {
+        return null;
+    }
+
+    public List<User> viewByUname(User user) {
         return null;
     }
 }
