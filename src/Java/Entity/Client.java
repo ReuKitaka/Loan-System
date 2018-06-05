@@ -32,8 +32,8 @@ public class Client extends Person implements Serializable {
     @Column(name = "client_no", nullable = true)
     private String clientNo;
 
-    @Column(name = "id_no", nullable = true)
-    private String idNo;
+//    @Column(name = "id_no", nullable = true)
+//    private String idNo;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Photo clientPhoto;
@@ -129,15 +129,15 @@ public class Client extends Person implements Serializable {
         this.clientNo = clientNo;
     }
 
-    @Override
-    public String getIdNo() {
-        return idNo;
-    }
-
-    @Override
-    public void setIdNo(String idNo) {
-        this.idNo = idNo;
-    }
+//    @Override
+//    public String getIdNo() {
+//        return idNo;
+//    }
+//
+//    @Override
+//    public void setIdNo(String idNo) {
+//        this.idNo = idNo;
+//    }
 
     public Photo getClientPhoto() {
         return clientPhoto;

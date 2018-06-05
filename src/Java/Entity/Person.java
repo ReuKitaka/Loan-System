@@ -45,7 +45,7 @@ public class Person implements Serializable{
     @Enumerated(EnumType.STRING)
     private IdType idType;
 
-    @Column(name = "id_no")
+    @Column(name = "id_no", nullable = true)
     private String idNo;
 
 

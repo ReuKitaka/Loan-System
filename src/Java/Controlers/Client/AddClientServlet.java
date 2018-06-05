@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("/addClient")
+@WebServlet("addClient")
 public class AddClientServlet extends CustomServlet {
 
 
@@ -76,10 +76,10 @@ public class AddClientServlet extends CustomServlet {
         client.setBankBranch(branch1);
         client.setBankAccount("");
         client.setUpdated(YesNo.fromString("No"));
-        client.setTitle(Title.fromString(""));
-        client.setSurname(get(req,""));
-        client.setFirstname(get(req,""));
-        client.setOthernames(get(req,""));
+        client.setTitle(Title.fromString("tit"));
+        client.setSurname(get(req,"sName"));
+        client.setFirstname(get(req,"fName"));
+        client.setOthernames(get(req,"oName"));
         client.setGender(Gender.fromString(get(req,"")));
         //client.setDob(get(req,""));
         client.setIdType(IdType.fromString(get(req,"")));

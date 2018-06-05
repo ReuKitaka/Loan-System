@@ -8,38 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528f8de1-51d3-44c3-83bc-9416a106a1f4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Java/Bean/LoanBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Java/Controlers/Client/ViewCLientServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bean.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Intre_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Intre_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Intre.iml" afterPath="$PROJECT_DIR$/Intre.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Bean/BankBean.java" afterPath="$PROJECT_DIR$/src/Java/Bean/BankBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Bean/BranchBean.java" afterPath="$PROJECT_DIR$/src/Java/Bean/BranchBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Bean/LoanBeanI.java" afterPath="$PROJECT_DIR$/src/Java/Bean/LoanBeanI.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Bean/ProfileBean.java" afterPath="$PROJECT_DIR$/src/Java/Bean/ProfileBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Bean/UserBean.java" afterPath="$PROJECT_DIR$/src/Java/Bean/UserBean.java" />
       <change beforePath="$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java" afterPath="$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/Bank/BankDao.java" afterPath="$PROJECT_DIR$/src/Java/Dao/Bank/BankDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/Branch/BranchDao.java" afterPath="$PROJECT_DIR$/src/Java/Dao/Branch/BranchDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/Branch/BranchDaoI.java" afterPath="$PROJECT_DIR$/src/Java/Dao/Branch/BranchDaoI.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/Client/ClientDao.java" afterPath="$PROJECT_DIR$/src/Java/Dao/Client/ClientDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/Profile/ProfileDao.java" afterPath="$PROJECT_DIR$/src/Java/Dao/Profile/ProfileDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Dao/User/UserDao.java" afterPath="$PROJECT_DIR$/src/Java/Dao/User/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Account.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Account.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Agent.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Agent.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Bank.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Bank.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Branch.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Branch.java" />
       <change beforePath="$PROJECT_DIR$/src/Java/Entity/Client.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Client.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Loan.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Loan.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Profile.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Profile.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Regime.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Regime.java" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Entity/User.java" afterPath="$PROJECT_DIR$/src/Java/Entity/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Entity/Person.java" afterPath="$PROJECT_DIR$/src/Java/Entity/Person.java" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/addClient.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/addClient.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/Intre.war" afterPath="$PROJECT_DIR$/target/Intre.war" />
+      <change beforePath="$PROJECT_DIR$/target/Intre/addClient.jsp" afterPath="$PROJECT_DIR$/target/Intre/addClient.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,16 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/Entity/Bank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bean.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bean.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/bean.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,6 +61,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AddClientServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Java/Entity/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="139" column="7" lean-forward="false" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Java/Entity/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Title.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Java/Entity/Enums/Title.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,41 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BranchDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/Dao/Branch/BranchDao.java">
+      <file leaf-file-name="addClient.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/addClient.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/Entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/Dao/User/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="51" column="67" lean-forward="false" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Java/Dao/Bank/BankDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="62" column="67" lean-forward="false" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
+            <state relative-caret-position="429">
+              <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -185,6 +161,7 @@
       <find>en</find>
       <find>tag</find>
       <find>ExampleDS</find>
+      <find>log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/Java/Entity/Enums/MaritalStatus.java" />
         <option value="$PROJECT_DIR$/src/Java/Bean/ClientBeanI.java" />
         <option value="$PROJECT_DIR$/src/Java/Bean/ClientBean.java" />
-        <option value="$PROJECT_DIR$/src/Java/Entity/Person.java" />
         <option value="$PROJECT_DIR$/src/Java/Controlers/AddUser.java" />
         <option value="$PROJECT_DIR$/src/Java/Dao/Client/ClientDaoI.java" />
         <option value="$PROJECT_DIR$/src/Java/Dao/CustomDao.java" />
@@ -229,13 +205,10 @@
         <option value="$PROJECT_DIR$/src/Java/Dao/Branch/BranchDaoI.java" />
         <option value="$PROJECT_DIR$/src/Java/Bean/LoanBeanI.java" />
         <option value="$PROJECT_DIR$/src/Java/Bean/LoanBean.java" />
-        <option value="$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/addClient.jsp" />
         <option value="$PROJECT_DIR$/src/Java/Entity/Agent.java" />
         <option value="$PROJECT_DIR$/src/Java/Dao/Profile/ProfileDao.java" />
         <option value="$PROJECT_DIR$/src/Java/Entity/Profile.java" />
         <option value="$PROJECT_DIR$/src/Java/Entity/Loan.java" />
-        <option value="$PROJECT_DIR$/src/Java/Entity/Client.java" />
         <option value="$PROJECT_DIR$/src/Java/Dao/Client/ClientDao.java" />
         <option value="$PROJECT_DIR$/src/Java/Entity/Account.java" />
         <option value="$PROJECT_DIR$/src/Java/Entity/Branch.java" />
@@ -249,6 +222,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/bean.xml" />
+        <option value="$PROJECT_DIR$/src/Java/Entity/Person.java" />
+        <option value="$PROJECT_DIR$/src/Java/Entity/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addClient.jsp" />
+        <option value="$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java" />
       </list>
     </option>
   </component>
@@ -300,6 +277,36 @@
               <item name="Intre" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controlers" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Intre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Intre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Intre" type="b2602c69:ProjectViewProjectNode" />
@@ -570,12 +577,12 @@
       <workItem from="1526989955965" duration="586000" />
       <workItem from="1527761637406" duration="6191000" />
       <workItem from="1528094901069" duration="12168000" />
-      <workItem from="1528179948467" duration="14993000" />
+      <workItem from="1528179948467" duration="21542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190412000" />
+    <option name="totallyTimeSpent" value="196961000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,6 +595,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -609,7 +617,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44151565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56507415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56507415" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326284" sideWeight="0.49127182" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23292868" sideWeight="0.5087282" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -646,13 +654,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Enums/IdType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Java/Entity/Enums/MaritalStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -885,30 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addClient.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Java/Entity/Photo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -955,14 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1068,8 +1037,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/bean.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="139" column="7" lean-forward="false" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java/Entity/Enums/Title.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Java/Controlers/Client/AddClientServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addClient.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
           <folding />
         </state>
       </provider>
