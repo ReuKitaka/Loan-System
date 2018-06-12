@@ -6,31 +6,28 @@ import Entity.Client;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 @Local
 @Stateless
 public class ClientBean implements ClientBeanI {
 
+    @PersistenceContext
     EntityManager em;
     public boolean add(Client client) {
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Just to get the em"+em);
         ClientDao clientDao=new ClientDao(em);
-        if (clientDao.add(client))
             return clientDao.add(client);
-        return false;
     }
 
     public boolean remove(Client client) {
         ClientDao clientDao=new ClientDao(em);
-        if (clientDao.remove(client))
-            return clientDao.remove(client);
-        return false;
+        return clientDao.remove(client);
     }
 
     public boolean edit(Client client) {
         ClientDao clientDao=new ClientDao(em);
-        if (clientDao.edit(client))
-            return clientDao.edit(client);
-        return false;
+        return clientDao.edit(client);
     }
 
     public boolean approve(Client client) {

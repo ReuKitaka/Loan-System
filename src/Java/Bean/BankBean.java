@@ -13,22 +13,15 @@ public class BankBean implements BankBeanI {
     EntityManager em;
     BankDao bankDao=new BankDao(em);
     public boolean add(Bank bank) {
-        if (bankDao.add(bank))
-            return bankDao.add(bank);
-        return false;
+        return bankDao.add(bank);
     }
 
     public boolean remove(Bank bank) {
-
-         if (bankDao.remove(bank))
-             return bankDao.remove(bank);
-        return false;
+        return bankDao.remove(bank);
     }
 
     public boolean edit(Bank bank) {
-        if (bankDao.edit(bank))
-            return bankDao.edit(bank);
-        return false;
+        return bankDao.edit(bank);
     }
 
     public Bank viewByIdObj(Bank bank) {

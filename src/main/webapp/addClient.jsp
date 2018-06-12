@@ -33,41 +33,125 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            <%--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>--%>
-            <li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-        </ul>
+                <%--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>--%>
+                <li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
         </nav>
 
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-xs-6 col-sm-3">
-            <form method="post" action="addClient">
-                Title:<select name="tit">
-                <option>MR</option>
-                <option>MRS</option>
-                <option>MISS</option>
-                <option>MS</option>
-                <option>DR</option>
-                <option>PROF</option>
-                <option>REV</option>
-                <option>ENG</option>
-                <option>VIRTUAL</option>
-                <option>HON</option>
-                <option>UNKNOWN</option>
-            </select>
+        <form method="post" action="addClient">
+            <%--<div class="row">--%>
+            <div class="col-md-6 col-sm-3">
+                <fieldset>
+                    <legend>Personal info:</legend>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Title:</label> <div class="col-sm-3"><select name="tit">
+                        <option>MR</option>
+                        <option>MRS</option>
+                        <option>MISS</option>
+                        <option>MS</option>
+                        <option>DR</option>
+                        <option>PROF</option>
+                        <option>REV</option>
+                        <option>ENG</option>
+                        <option>VIRTUAL</option>
+                        <option>HON</option>
+                        <option>UNKNOWN</option>
+                    </select></div><br>
+                    </div>
 
-                Sir Name:<input type="text" name="sName">
-                First Name:<input type="text" name="fName">
-                Other Names:<input type="text" name="oNames">
-            </form>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-            <div class="col-xs-3 col-sm-3"></div>
-            <div class="col-xs-3 col-sm-3"></div>
-        </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Sir Name: </label> <div class="col-sm-3"><input type="text" name="sName"></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">First Name:</label><div class="col-sm-3"><input type="text" name="fName"></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Other Names:</label><div class="col-sm-3"><input type="text" name="oNames"></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Gender:</label> <div class="col-sm-3"><select name="gen">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Date of birth:</label><div class="col-sm-3"><input type="date" name="dob"></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">ID Type:</label><div class="col-sm-3"><select name="idType">
+                        <option>NATIONAL</option>
+                        <option>PASSPORT</option>
+                        <option>VOTER</option>
+                        <option>DRIVER</option>
+                        <option>NOT_SPECIFIED</option>
+                    </select>
+                    </div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">ID No:</label><div class="col-sm-3"><input type="text" name="idNo"></div><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3">Marital Status:</label> <div class="col-sm-3"><select name="mStatus">
+                        <option>SINGLE</option>
+                        <option>MARRIED</option>
+                        <option>SEPARATED</option>
+                        <option>DIVORCED</option>
+                        <option>WIDOWED</option>
+                        <option>NOT SPECIFIED</option>
+                    </select></div><br>
+                    </div>
+                </fieldset>
+            </div>
+            <%--</div>--%>
+            <div class="col-md-6 col-sm-3">
+                <%--<div class="col-md-3 col-sm-3">--%>
+                <div>
+                    <fieldset>
+                        <legend>Bank Info:</legend>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Bank:</label><div class="col-sm-3"><input type="text" name="bank"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Branch:</label><div class="col-sm-3"><input type="text" name="branch"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Account No:</label><div class="col-sm-3"><input type="text" name="accNo"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Salary:</label><div class="col-sm-3"><input type="text" name="sal"></div><br>
+                        </div>
+                    </fieldset>
+                </div>
+                <%--</div>--%>
+                <%--<div class="col-xs-3 col-sm-3"></div>--%>
+
+
+
+                <div>
+                    <fieldset>
+                        <legend>Address:</legend>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Facebook:</label><div class="col-sm-3"><input type="text" name="fb"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Twitter:</label><div class="col-sm-3"><input type="tw" name="tw"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">LinkedIn:</label><div class="col-sm-3"><input type="text" name="li"></div><br>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Google plus:</label><div class="col-sm-3"><input type="text" name="gPlus"></div><br>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </div>
 </body>

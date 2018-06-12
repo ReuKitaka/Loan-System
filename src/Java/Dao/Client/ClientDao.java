@@ -13,9 +13,8 @@ public class ClientDao extends CustomDao<Client> implements ClientDaoI{
     }
 
     public boolean add(Client client){
-        if (addCustom(client))
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++So far so good"+true);
             return  this.addCustom(client);
-        return false;
     }
 
     public boolean edit(Client client) {

@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet("addClient")
+@WebServlet(urlPatterns = "addClient")
 public class AddClientServlet extends CustomServlet {
 
 
@@ -51,50 +51,58 @@ public class AddClientServlet extends CustomServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Client client=new Client();
-        client.setClientNo(get(req,""));
-        client.setClientPhoto(new Photo());
+        client.setClientNo("C1");
+//        client.setClientPhoto(new Photo());
         client.setAddress(new Address());
-        client.setFacebook(get(req,""));
-        client.setTwitter(get(req,""));
-        client.setLinkedIn(get(req,""));
-        client.setGoogleplus(get(req,""));
+        client.setFacebook(get(req,"fb"));
+        client.setTwitter(get(req,"tw"));
+        client.setLinkedIn(get(req,"li"));
+        client.setGoogleplus(get(req,"gPlus"));
         client.setStatus(Status.fromString(get(req,"")));
-        client.setSalary(new BigDecimal(get(req,"")));
+
+        System.out.println("-_-------------------------------------------_____________________"+client.getSalary());
+        String salary=get(req,"sal");
+        System.out.println("-_-------------------------------------------_____________________"+salary);
+        client.setSalary(new BigDecimal(salary));
+        System.out.println("-_-------------------------------------------_____________________"+client.getSalary());
         client.setDateCreated(new Date());
-        client.setPreparedBy(new User());
+//        client.setPreparedBy(new User());
         client.setEmployed(YesNo.fromString(get(req,"")));
 
 
-        Bank bank=new Bank();
-        bank.setName(get(req,""));
-        Bank b= (Bank) bankBeanI.viewByName(bank);
-        client.setBank(b);
-
-        Branch branch=new Branch();
-        branch.setName(get(req,""));
-        Branch branch1= (Branch) branchBeanI.viewByName(branch);
-        client.setBankBranch(branch1);
-        client.setBankAccount("");
+//        Bank bank=new Bank();
+//        bank.setName(get(req,"bank"));
+//        Bank b= (Bank) bankBeanI.viewByName(bank);
+//        client.setBank(b);
+//
+//        Branch branch=new Branch();
+//        branch.setName(get(req,"branch"));
+//        Branch branch1= (Branch) branchBeanI.viewByName(branch);
+//        client.setBankBranch(branch1);
+//        client.setBankAccount("accNo");
         client.setUpdated(YesNo.fromString("No"));
         client.setTitle(Title.fromString("tit"));
         client.setSurname(get(req,"sName"));
         client.setFirstname(get(req,"fName"));
-        client.setOthernames(get(req,"oName"));
-        client.setGender(Gender.fromString(get(req,"")));
+        client.setOthernames(get(req,"oNames    "));
+        client.setGender(Gender.fromString(get(req,"gen")));
         //client.setDob(get(req,""));
-        client.setIdType(IdType.fromString(get(req,"")));
-        client.setIdNo(get(req,""));
-        client.setMaritalStatus(MaritalStatus.fromString(get(req,"")));
+        client.setIdType(IdType.fromString(get(req,"idType")));
+        client.setIdNo(get(req,"idNo"));
+        client.setMaritalStatus(MaritalStatus.fromString(get(req,"mStatus")));
 
         HttpSession session=req.getSession(false);
-        if (session.getAttribute("name")!=null){
+        System.out.println("________________________________________________Ok");
+        System.out.println("________________________________________________Ok"+client+client.getOthernames());
+//        if (session.getAttribute("name")!=null){
             if (clientBeanI.add(client)){
+                System.out.println("________________________________________________From bean"+client+client.getOthernames());
                 resp.sendRedirect("");
             }else {
                 //session.setAttribute("Please try again",client);
             }
 
-        }
-        super.doPost(req, resp);
+//        }
+//        super.doPost(req, resp);
     }
 }

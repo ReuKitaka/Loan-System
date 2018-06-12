@@ -3,6 +3,8 @@ package Dao;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
 
+import static org.jboss.aesh.terminal.Key.S;
+
 public class CustomDao<T> {
 
     protected EntityManager entityManager;
@@ -12,9 +14,12 @@ public class CustomDao<T> {
     }
     public boolean addCustom(T t){
         try{
+            System.out.println("===================================================Still good here"+t.toString());
             entityManager.persist(t);
+            System.out.println("===================================================And here too");
             return true;
         }catch (PersistenceException px){
+            System.out.println("===================================================Problem occured here");
             px.printStackTrace();
             return  false;
         }

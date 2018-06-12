@@ -20,21 +20,15 @@ public class BranchBean implements BranchBeanI{
 
 
     public boolean add(Branch branch) {
-        if (branchDao.add(branch))
-            return branchDao.add(branch);
-        return false;
+        return branchDao.add(branch);
     }
 
     public boolean remove(Branch branch) {
-        if (branchDao.remove(branch))
-            return branchDao.remove(branch);
-        return false;
+        return branchDao.remove(branch);
     }
 
     public boolean edit(Branch branch) {
-        if (branchDao.edit(branch))
-            return branchDao.edit(branch);
-        return false;
+        return branchDao.edit(branch);
     }
 
     public Branch viewByIdObj(Branch branch) {

@@ -13,7 +13,7 @@
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: javax.ejb:javax.ejb-api:3.2" />
           <element id="library" level="project" name="Maven: javax.transaction:javax.transaction-api:1.2" />
-          <element id="library" level="project" name="Maven: taglibs:standard:1.1.0" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0-m01" />

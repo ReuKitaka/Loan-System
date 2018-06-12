@@ -13,9 +13,8 @@ public class UserDao extends CustomDao<User> implements UserDaoI{
     }
 
     public boolean add(User user) {
-        if (addCustom(user))
-            return  this.addCustom(user);
-        return false;
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++User been"+true);
+        return  this.addCustom(user);
     }
 
     public boolean remove(User user) {

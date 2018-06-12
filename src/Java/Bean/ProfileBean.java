@@ -20,21 +20,15 @@ public class ProfileBean implements ProfileBeanI{
 
     ProfileDao profileDao=new ProfileDao(em);
     public boolean add(Profile profile) {
-        if (profileDao.add(profile))
-            return profileDao.add(profile);
-        return false;
+        return profileDao.add(profile);
     }
 
     public boolean remove(Profile profile) {
-        if (profileDao.remove(profile))
-            return profileDao.remove(profile);
-        return false;
+        return profileDao.remove(profile);
     }
 
     public boolean edit(Profile profile) {
-        if (profileDao.edit(profile))
-            return profileDao.edit(profile);
-        return false;
+        return profileDao.edit(profile);
     }
 
     public Profile viewByIdObj(Profile profile) {

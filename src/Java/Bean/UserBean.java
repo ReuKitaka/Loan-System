@@ -1,13 +1,12 @@
 package Bean;
 
 import Dao.User.UserDao;
-import Dao.User.UserDaoI;
 import Entity.User;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Local
@@ -15,27 +14,26 @@ import java.util.List;
 public class UserBean implements UserBeanI {
 
 
+    @PersistenceContext
     EntityManager em;
 //    @Inject
-//    UserDaoI userDaoI;
+//    UserDaoI userDao;
 
-    UserDao userDaoI=new UserDao(em);
+
     public boolean add(User user) {
-        if (userDaoI.add(user))
-            return userDaoI.add(user);
-        return false;
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Just to get the em"+em);
+        UserDao userDao =new UserDao(em);
+        return userDao.add(user);
     }
 
     public boolean remove(User user) {
-        if (userDaoI.remove(user))
-            return userDaoI.remove(user);
-        return false;
+        UserDao userDao =new UserDao(em);
+        return userDao.remove(user);
     }
 
     public boolean edit(User user) {
-        if (userDaoI.edit(user))
-            return userDaoI.edit(user);
-        return false;
+        UserDao userDao =new UserDao(em);
+        return userDao.edit(user);
     }
 
     public User viewByIdObj(User user) {
